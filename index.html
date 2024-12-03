@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AngularJS User List</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="userApp">
+
+  <div ng-controller="UserController">
+    <h1>User Management</h1>
+
+    <!-- Input Form to Add Users -->
+    <form ng-submit="addUser()">
+      <input type="text" ng-model="newUser.name" placeholder="Enter name" required />
+      <button type="submit">Add User</button>
+    </form>
+
+    <!-- Table to Display the List of Users -->
+    <table border="1" style="margin-top: 20px; border-collapse: collapse; width: 50%;">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>username</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="user in users">
+          <td>aryan</td>
+          <td>aryan310</td>
+
+          <td>yash</td>
+          <td>yash9810</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Include the AngularJS App -->
+  <script src="app.js"></script>
+</body>
+</html>

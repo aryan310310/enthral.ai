@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+*.vs
+*.user
+*.dll
+/Fundamentals/ConsoleToWebAPI/bin
+/Fundamentals/ConsoleToWebAPI/obj
+/BookStore/BookStore.API/BookStore.API/bin
+/BookStore/BookStore.API/BookStore.API/obj
